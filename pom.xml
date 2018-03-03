@@ -22,9 +22,9 @@
 
 		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<testResources>
-			<resource>
+			<testResource>
 				<directory>src/test/resources</directory>
-			</resource>
+			</testResource>
 		</testResources>
 		<plugins>
 			<plugin>

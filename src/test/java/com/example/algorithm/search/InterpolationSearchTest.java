@@ -11,13 +11,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class LinearSearchTest {
+public class InterpolationSearchTest {
 
 	private int[] input;
 	private int element;
 	private int expectedOutput;
 
-	public LinearSearchTest(int[] input, int element, int expectedOutput) {
+	public InterpolationSearchTest(int[] input, int element, int expectedOutput) {
 		this.input = input;
 		this.element = element;
 		this.expectedOutput = expectedOutput;
@@ -25,13 +25,13 @@ public class LinearSearchTest {
 
 	@Test
 	public void test() {
-		Search algo = new LinearSearch();
+		Search algo = new InterpolationSearch();
 		assertEquals(expectedOutput, algo.search(input, element));
 	}
 
 	@Parameters
 	public static Collection<Object[]> data() {
-		return Arrays.asList(new Object[][] { { new int[] { 5, 2, 3, 8 }, 2, 1 }, { new int[] { 6, 10, 3, 1 }, 3, 2 },
+		return Arrays.asList(new Object[][] { { new int[] { 1, 2, 3 }, 2, 1 }, { new int[] { 1, 2, 3, 4 }, 3, 2 },
 				{ new int[] { 1, 2, 3 }, 0, -1 }, { new int[] {}, 1, -1 } });
 	}
 

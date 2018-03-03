@@ -8,7 +8,7 @@ package com.example.algorithm.search;
  * @author KRPurohit
  *
  */
-public class LinearSearch {
+public class LinearSearch implements Search{
 
 	/**
 	 * Function will check that element exist in provided input of array or not.</br>
