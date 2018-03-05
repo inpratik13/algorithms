@@ -11,19 +11,19 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class BubbleSortTest {
+public class SelectionSortTest {
 
 	private int[] input;
 	private int[] expectedOutput;
 
-	public BubbleSortTest(int[] input, int[] expectedOutput) {
+	public SelectionSortTest(int[] input, int[] expectedOutput) {
 		this.input = input;
 		this.expectedOutput = expectedOutput;
 	}
 
 	@Test
 	public void test() {
-		Sort algo = new BubbleSort();
+		Sort algo = new SelectionSort();
 		algo.sort(input);
 		assertArrayEquals(expectedOutput, input);
 	}
