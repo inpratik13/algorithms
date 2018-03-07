@@ -6,7 +6,7 @@ package com.example.algorithm.sort;
  * @author inpratik13
  *
  */
-public class HeapSort implements Sort {
+public class HeapSort extends Sort {
 
 	public void sort(int[] input) {
 		buildHeap(input);
@@ -54,11 +54,5 @@ public class HeapSort implements Sort {
 				break;
 			}
 		}
-	}
-
-	private static void swap(int[] heap, int index1, int index2) {
-		int swap = heap[index1];
-		heap[index1] = heap[index2];
-		heap[index2] = swap;
 	}
 }

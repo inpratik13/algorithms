@@ -10,7 +10,7 @@ package com.example.algorithm.sort;
  * @author inpratik13
  *
  */
-public class BubbleSort implements Sort {
+public class BubbleSort extends Sort {
 
 	public void sort(int[] input) {
 		for (int loop = input.length - 1; loop > 0; loop--) {

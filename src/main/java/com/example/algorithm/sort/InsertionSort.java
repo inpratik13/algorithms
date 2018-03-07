@@ -11,7 +11,7 @@ package com.example.algorithm.sort;
  * @author inpratik13
  *
  */
-public class InsertionSort implements Sort {
+public class InsertionSort extends Sort {
 
 	public void sort(int[] input) {
 		int current;

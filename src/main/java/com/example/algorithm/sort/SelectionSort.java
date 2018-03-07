@@ -9,7 +9,7 @@ package com.example.algorithm.sort;
  * @author inpratik13
  *
  */
-public class SelectionSort implements Sort {
+public class SelectionSort extends Sort {
 
 	public void sort(int[] input) {
 
