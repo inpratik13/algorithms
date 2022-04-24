@@ -1,15 +1,15 @@
 /**
  * (C) VyanTech.com Ltd 2021
  */
-package com.example.algorithm.dp;
+package com.example.algorithm.dp.knapsack;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class KnapsackTest {
+public class KnapsackImplTest {
 
-    private static final MaxValueAlgo algo = new Knapsack();
+    private static final knapsack algo = new knapsackImpl();
     
     @Test
     public void test1() {

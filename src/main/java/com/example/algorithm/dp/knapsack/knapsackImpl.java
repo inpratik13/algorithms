@@ -1,9 +1,9 @@
 /**
  * (C) VyanTech.com Ltd 2021
  */
-package com.example.algorithm.dp;
+package com.example.algorithm.dp.knapsack;
 
-public class Knapsack implements MaxValueAlgo {
+public class knapsackImpl implements knapsack {
 
     @Override
     public int maxValue(int[] values, int[] costs, int budget) {
